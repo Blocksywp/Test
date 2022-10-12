@@ -1,0 +1,86 @@
+  /*<![CDATA[*/
+  .fcBt{
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:0 0 20px rgba(0,0,0,.07);
+    cursor: pointer;
+  }
+  .fcBt svg{
+    width: 18px;
+    height: 18px;
+    fill: #686868
+  }
+  .fcBt:hover span{
+    opacity: 1;
+    visibility: visible;
+    top: calc(30px + 10px);
+  }
+  .fcBt span{
+    position:absolute;
+    top:30px;
+    right:-15px;
+    background:#fff;
+    max-width:300px;
+    width:180px;
+    border-radius:10px;
+    padding:10px;
+    font-size:13px;
+    line-height:1.1rem;
+    box-shadow:0 0 20px rgba(0,0,0,.07);
+    opacity:0;
+    visibility:hidden;
+    transition:all .2s ease;
+    pointer-events: none;
+  }
+  .fcBt span::before{
+    content:'';
+    position: absolute;
+    width:10px;
+    height:10px;
+    background:#fff;
+    top:-4px;
+    right:25px;
+    transform:rotate(45deg);
+    border-radius:2px;
+  }
+  .fcAd{
+    position: fixed;
+    top: -30%;
+    right: -30%;
+    bottom: -30%;
+    left: -30%;
+    background: rgba(0,0,0,.3);
+    z-index: 998;
+  }
+  .fcFx{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fcCn{
+    background: #fff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    max-width: 768px;
+  }
+  /*]]>*/
